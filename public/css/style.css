@@ -1,0 +1,881 @@
+/* CSS DES CONTAINERS DE CHAQUE PAGES */
+
+.container_welcome{
+    background-image: url("../images/welcomeBackground.png");
+    margin: 0; /* Supprimer la marge par défaut du corps */
+    padding: 0; /* Supprimer le rembourrage par défaut du corps */
+    height: 100vh; /* Définir la hauteur à 100% de la vue du navigateur */
+    background-size: cover; /* Ajuster la taille de l'image pour couvrir toute la page */
+    background-position: center center; /* Centrer l'image horizontalement et verticalement */
+    background-attachment: fixed; /* Fixer l'image pendant le défilement de la page */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+}
+.container_planet{
+    background-image: url("../images/starsdestop.png");
+    margin: 0; /* Supprimer la marge par défaut du corps */
+    padding: 0; /* Supprimer le rembourrage par défaut du corps */
+    height: 100vh; /* Définir la hauteur à 100% de la vue du navigateur */
+    background-size: cover; /* Ajuster la taille de l'image pour couvrir toute la page */
+    background-position: center center; /* Centrer l'image horizontalement et verticalement */
+    background-attachment: fixed; /* Fixer l'image pendant le défilement de la page */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+
+}
+
+
+
+/* CSS DE LA PAGE WELCOME */
+.main_welcome{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+.contenu_welcome{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20rem;
+    margin-left: 10rem;
+    margin-right: 17rem;
+    justify-content: space-between;
+
+}
+.text_welcome{
+    width: 50%;
+}
+.titre_welcome{
+    font-family: 'Bellefair', serif;
+    font-size: 150px;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+.soustitre_welcome{
+    font-family: 'Barlow Condensed',sans-serif;
+    letter-spacing: 4.72px;
+    font-size: 28px;
+    color: #D0D6F9;
+    font-weight: bold;
+
+}
+.corps_welcome{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: #D0D6F9;
+    font-weight: bold;
+}
+.bouton_welcome{
+    background-color: white;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    max-width: 15rem;
+    max-height: 15rem;
+    min-width: 15rem;
+    min-height: 15rem;
+    margin-top: 5rem;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0px #ffffff50;
+    transition: box-shadow 0.3s linear;
+}
+.bouton_lien{
+    text-decoration: none;
+    color: #000000;
+}
+.bouton_welcome:hover{
+    box-shadow: 0px 0px 0px 60px #ffffff50;
+}
+@media screen and (max-width: 1400px){
+    .contenu_welcome{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    
+    }
+    .container_welcome{
+        background-image: url("../images/welcomeBackgroundturn.png");
+        margin: 0; /* Supprimer la marge par défaut du corps */
+        padding: 0; /* Supprimer le rembourrage par défaut du corps */
+        height: 100vh; /* Définir la hauteur à 100% de la vue du navigateur */
+        background-size: cover; /* Ajuster la taille de l'image pour couvrir toute la page */
+        background-position: center center; /* Centrer l'image horizontalement et verticalement */
+        background-attachment: fixed; /* Fixer l'image pendant le défilement de la page */
+        background-repeat: no-repeat; /* Ne pas répéter l'image */
+    }
+    .titre_welcome{
+        font-family: 'Bellefair', serif;
+        font-size: 150px;
+        color: white;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        
+    }
+    .text_welcome{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .corps_welcome{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 770px){
+    
+    .text_welcome{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .titre_welcome{
+        font-size: 80px;
+        word-break: break-all;
+    }
+    .contenu_welcome{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    
+    }
+    .main_welcome{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+    }
+    #main.row{
+        width: 100%;
+    }
+}
+
+/* CSS DE LA PAGE DESTINATION -------------------------------------------------------------------------------- */
+.infos_planet{
+    display: flex;   
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-right: 5rem;
+}
+.numero{
+    color: grey;
+    margin-right: 2rem;
+}
+.main_planet{
+    display: flex;
+
+}
+.navigation_planets{
+    display: flex;
+    margin-bottom: 2rem;
+    width: 300px;
+    justify-content: space-between;
+}
+.box_nav_planet {
+    
+    opacity: initial;
+    z-index: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: larger;
+    font-weight: 900;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+}
+.box_nav_planet_selected{
+    opacity: initial;
+    z-index: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Barlow Condensed',sans-serif;
+    font-size: larger;
+    font-weight: 900;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+    border-bottom: 2px solid; /* Définissez la bordure inférieure initialement transparente */
+    border-bottom-color: white;
+}
+.navigation_planets a{
+    text-decoration: none;
+    border-bottom: 2px solid transparent; /* Définissez la bordure inférieure initialement transparente */
+    transition: border-bottom-color 0.3s ease; /* Ajoutez une transition pour une animation fluide */
+}
+.navigation_planets a:hover{
+    border-bottom-color: white;
+}
+.soustitre_planet{
+    font-family: 'Barlow Condensed',sans-serif;
+    letter-spacing: 4.72px;
+    font-size: 28px;
+    color: #D0D6F9;
+    font-weight: bolder;
+    width: 900px;
+    height: 650px;
+    margin-top: 3rem;
+}
+.titre_destination{
+    display: flex;
+    justify-content: center;
+}
+.contenu_planet{
+    margin-top: 5rem;
+    margin-left: 8rem;
+    margin-right: 7rem;
+}
+.text_planet{
+    padding-top: 12rem;
+    margin-right: 7rem;
+}
+.titre_planet{
+    font-family: 'Bellefair', serif;
+    font-size: 100px;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.corps_planet{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: #D0D6F9;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 5rem;
+}
+.titre_info_planet{
+    filter: unset;
+    opacity: initial;
+    z-index: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Barlow Condensed',sans-serif;
+    font: 16px;
+    font-weight: 800;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+    text-decoration: none;
+}
+.info_planet{
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+    color: white;
+    margin-top: 1rem;
+}
+.separateur_planet{
+    z-index: 3;
+    border: 1px;
+    background-color: gray;
+    width: 100%;
+    height: 1px;
+}
+@media screen and (max-width: 1150px) {
+    .main_planet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .titre_destination{
+        display: block;
+        margin-left: 3rem;
+    }
+    .contenu_planet{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.7) translate(0, -5rem);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .soustitre_planet{
+        font-family: 'Barlow Condensed',sans-serif;
+        letter-spacing: 4.72px;
+        font-size: 28px;
+        color: #D0D6F9;
+        font-weight: bolder;
+        height: 350px;
+        margin-top: 3rem;
+    }
+    .text_planet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem;
+        margin-right: 0rem;
+    }
+    .corps_planet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Barlow', sans-serif;
+        font-size: 18px;
+        color: #D0D6F9;
+        font-weight: bold;
+        line-height: 30px;
+        margin-bottom: 2rem;
+    }
+    .titre_planet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Bellefair', serif;
+        font-size: 100px;
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+    .infos_planet{
+        display: flex;   
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        margin-right: 0rem;
+    
+    }
+    .titre_info_planet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        filter: unset;
+        opacity: initial;
+        z-index: 100px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-family: 'Barlow Condensed',sans-serif;
+        font: 16px;
+        font-weight: 800;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+        text-decoration: none;
+    }
+}
+@media screen and (max-width: 770px) {
+    .titre_destination{
+        display: flex;
+        justify-content: center;
+    }
+    .infos_planet{
+        display: flex;   
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        margin-right: 0rem;
+    }
+}
+
+/* CSS DE LA PAGE EQUIPAGE -----------------------------------------------------------------------*/
+
+.container_equipage{
+    background-image: url("../images/earthspace.png");
+    margin: 0; /* Supprimer la marge par défaut du corps */
+    padding: 0; /* Supprimer le rembourrage par défaut du corps */
+    height: 100vh; /* Définir la hauteur à 100% de la vue du navigateur */
+    background-size: cover; /* Ajuster la taille de l'image pour couvrir toute la page */
+    background-position: center center; /* Centrer l'image horizontalement et verticalement */
+    background-attachment: fixed; /* Fixer l'image pendant le défilement de la page */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+}
+.slides{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+.main_equipage{
+    display: flex;
+}
+.left_equipage{
+    width: 50%;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+.titre_equipe{
+    font-family: 'Barlow Condensed',sans-serif;
+    letter-spacing: 4.72px;
+    font-size: 28px;
+    color: #D0D6F9;
+    font-weight: bolder;
+}
+.titre_equipage{
+    font-family: 'Bellefair', serif;
+    font-size: 58px;
+    color: grey;
+    margin-top: 10rem;
+}
+.nom_equipage{
+    font-family: 'Bellefair', serif;
+    font-size: 100px;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.corps_equipage{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: #D0D6F9;
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-right: 20rem;
+}
+.right_equipage{
+    display: flex;
+    margin-top: 1rem;
+    width: 50%;
+    height: 900px;
+}
+.right_equipage img{
+    position: relative;
+
+}
+.main_equipage {
+    width: 100vw;
+    height: 100%;
+    margin: 50px auto;
+    position: relative;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+  
+  #s1 {
+    padding: 6px;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -36px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s2 {
+    padding: 6px;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s3 {
+    padding: 6px;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 12px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s4 {
+    padding: 6px;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 36px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+  #s5 {
+    padding: 6px;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 60px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  #s6 {
+    padding: 6px;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 84px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  #s7 {
+    padding: 6px;
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 110px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s1:hover,
+  #s2:hover,
+  #s3:hover,
+  #s4:hover, 
+  #s5:hover,
+  #s6:hover,
+  #s7:hover{
+    opacity: .50;
+  }
+  
+  .inner-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+  
+  .control {
+    display: none;
+  }
+  
+  #Slide1:checked ~ .overflow-wrapper {
+    margin-left: 0%;
+  }
+  
+  #Slide2:checked ~ .overflow-wrapper {
+    margin-left: -100%;
+  }
+  
+  #Slide3:checked ~ .overflow-wrapper {
+    margin-left: -200%;
+  }
+  
+  #Slide4:checked ~ .overflow-wrapper {
+    margin-left: -300%;
+  }
+  
+  #Slide5:checked ~ .overflow-wrapper {
+    margin-left: -400%;
+  }
+  #Slide6:checked ~ .overflow-wrapper {
+    margin-left: -500%;
+  }
+  #Slide7:checked ~ .overflow-wrapper {
+    margin-left: -600%;
+  }
+  #Slide1:checked + #s1 {
+    opacity: 1;
+  }
+  
+  #Slide2:checked + #s2 {
+    opacity: 1;
+  }
+  
+  #Slide3:checked + #s3 {
+    opacity: 1;
+  }
+  
+  #Slide4:checked + #s4 {
+    opacity: 1;
+  }
+
+  #Slide5:checked + #s5 {
+    opacity: 1;
+  }
+
+  #Slide6:checked + #s6 {
+    opacity: 1;
+  }
+
+  #Slide7:checked + #s7 {
+    opacity: 1;
+  }
+  
+  .overflow-wrapper {
+    
+    height: 100%;
+  
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .slide {
+    width: 100vw;
+    float: left;
+  }
+@media screen and (max-width:1140px) {
+    .slides{
+        display: flex;
+        flex-direction: row;
+        margin-top: 5rem;
+    }
+    .overflow-wrapper {
+        width: 400%;
+        height: 100%;
+        overflow: auto;
+        top: 0;
+        left: 0;
+        
+        z-index: 1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+      .inner-wrapper {
+        overflow-y: scroll;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+    
+      }
+      
+    .main_equipage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .left_equipage{
+        width: 70%;
+        margin-left: 4rem;
+        margin-top: 2rem;
+    }
+    .titre_equipe{
+        font-family: 'Barlow Condensed',sans-serif;
+        letter-spacing: 4.72px;
+        font-size: 28px;
+        color: #D0D6F9;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .titre_equipage{
+        font-family: 'Bellefair', serif;
+        font-size: 58px;
+        color: grey;
+        margin-top: 5rem;
+        word-break: break-all;
+    }
+    .nom_equipage{
+        font-family: 'Bellefair', serif;
+        font-size: 90px;
+        color: white;
+        margin-bottom: 1.5rem;
+        word-break: break-all;
+    }
+    .corps_equipage{
+        display: flex;
+        justify-content: center;
+        font-family: 'Barlow', sans-serif;
+        font-size: 18px;
+        color: #D0D6F9;
+        font-weight: bold;
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .right_equipage{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+
+    
+    }
+    .right_equipage img{
+        position: relative;
+        width:100%;
+        height: 100%;
+    }
+}
+
+/* CSS DE LA PAGE TECHNOLOGIE ---------------------------------------------------------------------------------- */
+
+
+.container_technologie{
+    background-image: url("../images/timelapse.png");
+    margin: 0; /* Supprimer la marge par défaut du corps */
+    padding: 0; /* Supprimer le rembourrage par défaut du corps */
+    height: 100vh; /* Définir la hauteur à 100% de la vue du navigateur */
+    background-size: cover; /* Ajuster la taille de l'image pour couvrir toute la page */
+    background-position: center center; /* Centrer l'image horizontalement et verticalement */
+    background-attachment: fixed; /* Fixer l'image pendant le défilement de la page */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+}
+.titre_lancement{
+    font-family: 'Barlow Condensed',sans-serif;
+    letter-spacing: 4.72px;
+    font-size: 28px;
+    color: #D0D6F9;
+    font-weight: bolder;
+    margin-left: 5rem;
+}
+.ensemble_technologie{
+    display: flex;
+}
+.boutons_technologie{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20%;
+    margin-left: 5rem;
+}
+.bouton_techno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font:10px;
+    height: 8rem;
+    width: 8rem;
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: #ffffff;
+    text-decoration: none;
+}
+.bouton_techno:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    font:10px;
+    height: 8rem;
+    width: 8rem;
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: #ffffff;
+    text-decoration: none;
+}
+.numero_boutons{
+    font-size: 25px;
+}
+.bouton_techno_selected{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    color: black;
+    height: 8rem;
+    width: 8rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border-color: #ffffff;
+    text-decoration: none;
+}
+.texte_technologie{
+    width: 40%;
+    margin-top: 8rem;
+}
+.titre_technologie{
+    font-family: 'Bellefair', serif;
+    font-size: 90px;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.corps_technologie{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: #D0D6F9;
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-right: 4rem;
+}
+.image_technologie{
+    width: auto;
+    height: 700px;
+}
+.image_technologie img{
+   max-width: 450px;
+   height: auto;
+}
+@media screen and (max-width:1140px) {
+        .boutons_technologie{
+            order: 2;
+            flex-direction: row;
+            justify-content: center;
+
+            width: 100%;
+            margin-left: 0rem;
+        }
+        .texte_technologie{
+            text-align: center;
+            order: 3;
+            margin-bottom: 5rem;
+        }
+        .corps_technologie{
+            margin-right: 0;
+        }
+        .image_technologie{
+            order: 1;
+            width: 100%;
+            height: 500px;
+            margin-bottom: 5rem;
+        }
+        .image_technologie img{
+            object-fit: none;
+            min-width: 100%;
+            height: 500px;
+        }
+        .ensemble_technologie{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .bouton_techno{
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        .bouton_techno_selected{
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        .titre_lancement{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+}
+@media screen and (max-width:720px){
+    .titre_lancement{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
